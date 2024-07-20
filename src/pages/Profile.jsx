@@ -1,10 +1,6 @@
-import { toast } from "react-toastify";
 import useAuth from "../hooks/useAuth";
 const Profile = () => {
 	const { currentUser, logOut } = useAuth()
-
-
-
 	return (
 		<main>
 			{currentUser ? (
