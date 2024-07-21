@@ -4,59 +4,65 @@ import useAuth from "../hooks/useAuth";
 import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
-	const [email, setEmail] = useState("");
-	const [password, setPassword] = useState("");
+	const [formData, setformData] = useState({
+		email: "",
+		password: ""
+	})
 	const { logIn } = useAuth()
-	const navigate = useNavigate()
+	const handleChange = (e) => {
+		setformData({ ...formData , [e.target.name]: e.target.value})
+	}
 	const handleSubmit = async (e) => {
 		e.preventDefault();
 		try {
+			const { email, password } = formData
 			await logIn(email, password)
-			navigate("/profile")
-			toast.success("User logged succesfully", {
-				position: "top-center"
-			});
+			toast.success("User logged succesfully");
 		} catch (error) {
-			console.log(error.message);
+			console.error(error.message);
 			toast.error(error.message);
 		}
 	};
 	return (
-		<main>
-			<form onSubmit={handleSubmit} className="ring-1 ring-gray-300 p-6 w-[600px]">
+			<main className="mx-6">
+			<form onSubmit={handleSubmit} className="ring-1 ring-gray-300 p-6  sm:w-[600px]  w-full shadow-lg rounded-lg">
 				<h3 className="text-3xl my-6">Login</h3>
-				<div className="flex flex-col gap-4 my-7">
-					<label>Email address</label>
+				<div className="mb-3 flex flex-col gap-4 my-7">
+					<label htmlFor="email">Email address</label>
 					<input
+						id="email"
+						name="email"
 						type="email"
-						className="form-control border p-3 rounded-xl"
-						value={email}
+						className="form-control border p-3 rounded-lg"
 						placeholder="Enter email"
-						onChange={(e) => setEmail(e.target.value)}
+						value={formData.email}
+						onChange={handleChange}
+						required
 					/>
 				</div>
 
-				<div className="flex flex-col gap-4 my-7">
-					<label>Password</label>
+				<div className="mb-3 flex flex-col gap-4 my-7">
+					<label htmlFor="password">Password</label>
 					<input
+						id="password"
+						name="password"
 						type="password"
-						className="form-control border p-3 rounded-xl"
+						className="form-control border p-3 rounded-lg"
 						placeholder="Enter password"
-						value={password}
-						onChange={(e) => setPassword(e.target.value)}
+						value={formData.password}
+						onChange={handleChange}
+						required
 					/>
 				</div>
 
-				<div className="d-grid">
 					<button
 						type="submit"
-						className="btn btn-primary bg-blue-600 text-white border px-10 py-3 rounded-2xl"
+						className="bg-blue-600 text-white border px-10 py-3 rounded-lg w-full my-4"
 					>
-						Submit
+						Log In
 					</button>
-				</div>
-				<p className="forgot-password text-right">
-					New user <Link to="/register">Register Here</Link>
+				<p className="text-right">
+				Create an account <Link className="text-blue-600" to="/register">Register</Link>
 				</p>
 			</form>
 		</main>

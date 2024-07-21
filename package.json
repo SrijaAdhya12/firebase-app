@@ -1,8 +1,9 @@
 {
   "name": "firebase-app",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
+  "description": "A firebase Authentication app",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -10,14 +11,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "dotenv": "^16.4.5",
     "firebase": "^10.12.4",
-    "process": "^0.11.10",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-router-dom": "^6.25.1",
-    "react-toastify": "^10.0.5",
-    "vite-plugin-env-compatible": "^2.0.1"
+    "react-toastify": "^10.0.5"
   },
   "devDependencies": {
     "@types/react": "^18.3.3",

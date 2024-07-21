@@ -21,10 +21,8 @@ export const AuthProvider = ({ children }) => {
     const logOut = () => signOut(auth);
     const logIn = (email, password) =>
         signInWithEmailAndPassword(auth, email, password);
-    const signUp = async (email, password) => {
-        console.log(typeof(email.value),password)
-        return await createUserWithEmailAndPassword(auth, email, password);
-    }
+    const signUp = (email, password) => createUserWithEmailAndPassword(auth, email, password);
+    
     const value = {
         currentUser, signUp, logIn, logOut
     }
