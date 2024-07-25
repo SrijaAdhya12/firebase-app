@@ -69,6 +69,14 @@
 
 ![line]
 
+## License
+
+-   see [LICENSE]
+
+**Srija, 2024**
+
+[license]: https://github.com/warmachine028/memories/blob/main/LICENSE
+
 ## Thank you, everyone 💚
 
 [markdown badges]: https://github.com/Ileriayo/markdown-badges
