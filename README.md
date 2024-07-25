@@ -2,7 +2,7 @@
 
 <div align=center>
     <a href="https://github.com/SrijaAdhya12/firebase-app">
-        <img width="200" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Firebase_Logo.svg/1024px-Firebase_Logo.svg.png">
+        <img width="200" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Firebase_icon.svg/1280px-Firebase_icon.svg.png">
     </a>
     <p style="font-family: roboto, calibri; font-size:12pt; font-style:italic"> Firebase App 🔥 </p>
     <a src="https://github.com/SrijaAdhya12/firebase-app/forks">
