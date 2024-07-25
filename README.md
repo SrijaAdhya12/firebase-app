@@ -2,7 +2,7 @@
 
 <div align=center>
     <a href="https://github.com/SrijaAdhya12/firebase-app">
-        <img width="200" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSK8tZ5alMDQBzLMNM3-GAQP1pljAbfd1J5uQ&usqp=CAU">
+        <img width="200" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRxST38LGyIjAcfpd-bDCJNw5FnAMWRD6nMhRcAYuVbVVEktnD7j8chf50&s=10">
     </a>
     <p style="font-family: roboto, calibri; font-size:12pt; font-style:italic"> Firebase App 🔥 </p>
     <a src="https://github.com/SrijaAdhya12/firebase-app/forks">
