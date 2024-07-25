@@ -76,7 +76,9 @@
 
 **Srija, 2024**
 
-[license]: https://github.com/warmachine028/memories/blob/main/LICENSE
+[license]: https://github.com/SrijaAdhya12/firebase-app/blob/main/LICENSE
+
+![line]
 
 ## Thank you, everyone 💚
 
